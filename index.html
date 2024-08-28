@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Product preview card component</title>
+    <link href="src/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="flex justify-center items-center h-dvh bg-creambg">
+      <div
+        class="card bg-white m-5 rounded-lg grid md:grid-cols-2 items-center gap-4 w-[700px]"
+      >
+        <div class="img">
+          <img
+            src="images/image-product-desktop.jpg"
+            alt="image-product-desktop"
+            class="hidden md:block w-fit rounded-lg"
+          />
+          <img
+            src="images/image-product-mobile.jpg"
+            alt="image-product-mobile"
+            class="block md:hidden w-fit rounded-t-lg"
+          />
+        </div>
+        <div class="info p-4 flex flex-col justify-start gap-3 md:gap-9">
+          <h1
+            class="font-mont font-medium text-base opacity-50 tracking-[0.5rem] uppercase"
+          >
+            Perfume
+          </h1>
+          <p class="font-fraun font-bold text-4xl text-textColor">
+            Gabrielle Essence Eau De Parfum
+          </p>
+          <p class="font-mont font-medium leading-6 text-lg opacity-50">
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+          <div class="price flex items-center gap-6">
+            <p class="font-mont font-bold text-greenbtn text-4xl">$149.99</p>
+            <p class="line-through font-mont opacity-50 text-lg">$169.99</p>
+          </div>
+
+          <div
+            class="bg-greenbtn flex justify-center p-3 text-white gap-3 rounded-xl cursor-pointer hover:bg-hoverbtn"
+          >
+            <img src="images/icon-cart.svg" alt="cart" />
+            <p class="font-mont font-medium">Add to Cart</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
